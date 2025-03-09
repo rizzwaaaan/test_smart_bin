@@ -128,6 +128,5 @@ def delete_dustbin():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Run the Flask Server using SocketIO
-if __name__ == "__main__":
-    socketio.run(app, debug=True, port=5050)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5050, debug=True)

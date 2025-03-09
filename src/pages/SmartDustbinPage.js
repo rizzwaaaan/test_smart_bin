@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SmartDustbinPage.css";
-import { Trash, Plus, X, MapPin, ArrowLeft } from "lucide-react";
+import { Plus, X, MapPin, ArrowLeft } from "lucide-react";
 import axios from "axios";
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -26,7 +26,8 @@ const SmartDustbinPage = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [mapCenter, setMapCenter] = useState([8.5241, 76.9366]); // Default: Trivandrum
 
-  const API_BASE_URL = "http://127.0.0.1:5050"; // Update if needed
+  const API_BASE_URL = "http://192.168.1.6:5050"; // Use your actual local IP
+
 
   // Fetch dustbin data
   const fetchDustbinData = async () => {
