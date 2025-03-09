@@ -1,0 +1,28 @@
+name: smart_waste_mng_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.27.2
+  firebase_messaging: ^14.7.100
+  socket_io_client: ^2.0.0
+
+
+
+  cupertino_icons: ^1.0.8
+  http: ^1.1.0  # Added HTTP package for API requests
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

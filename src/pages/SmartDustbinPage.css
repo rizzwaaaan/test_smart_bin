@@ -1,0 +1,176 @@
+.smart-dustbin-page {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+}
+
+.smart-dustbin-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.notification-icon {
+    background-color: #e0f2fe;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.notification-heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 0.3rem;
+}
+
+.notification-values {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.value-label {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Updated CSS for single-row layout */
+.add-dustbin-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-dustbin-section h2 {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.notification-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    width: 100%;
+    /* Increased the width here */
+    margin: 1rem 0;
+    /* Added margin to create space between the notification boxes */
+}
+
+.notification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    /* Increased gap to add space between notification boxes */
+    justify-items: center;
+    /* Centers the grid items */
+}
+
+.notification-buttons {
+    display: flex;
+    gap: 0.2rem;
+    justify-content: flex-start;
+    /* Align buttons to the left */
+}
+
+.add-dustbin-section input {
+    width: 20%;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.add-dustbin-section input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.add-dustbin-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-dustbin-button:hover {
+    background-color: #0056b3;
+}
+
+.add-dustbin-button svg {
+    margin-right: 8px;
+}
+
+/* Buttons Styling for Same Row */
+.report-button,
+.delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.report-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #FF4C4C;
+}
+
+.delete-button:hover {
+    background-color: #e03e3e;
+}
+
+.delete-button svg,
+.report-button svg {
+    margin-right: 8px;
+}

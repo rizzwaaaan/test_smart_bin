@@ -1,0 +1,46 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.smart_waste_mng_app"
+    compileSdk = 34  // Set explicitly instead of using flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17  // Updated for AGP 8.x
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"  // Match Java 17
+    }
+
+    defaultConfig {
+        applicationId = "com.example.smart_waste_mng_app"
+        minSdk = flutter.minSdkVersion
+        targetSdk = 34  // Set explicitly to match compileSdk
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        multiDexEnabled = true  // Add if using multidex
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+            // Add these for release builds (optional but recommended):
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"  // Match Kotlin version
+}
