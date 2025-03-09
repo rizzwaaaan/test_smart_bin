@@ -21,7 +21,7 @@ class _SmartDustbinAppState extends State<SmartDustbinApp> {
   IO.Socket? socket;
   String? alertMessage;
   final String apiUrl =
-      'http://192.168.1.6:5050'; // Update with your Flask API IP
+      'http://10.18.0.105:3030'; // Update with your Flask API IP
 
   @override
   void initState() {

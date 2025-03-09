@@ -26,7 +26,7 @@ const SmartDustbinPage = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [mapCenter, setMapCenter] = useState([8.5241, 76.9366]); // Default: Trivandrum
 
-  const API_BASE_URL = "http://192.168.1.6:5050"; // Use your actual local IP
+  const API_BASE_URL = "http://10.18.0.105:3030"; // Use your actual local IP
 
 
   // Fetch dustbin data
